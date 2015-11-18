@@ -1,0 +1,26 @@
+.page{
+	background-repeat: no-repeat;
+	background-position: center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 600px;
+	// display: none;
+	// &.page-1{
+	// 	display: block;
+	// }
+}
+.page-content{
+	color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    background: rgba(0,0,0,0.6);
+    padding: 2em;
+    font-size: 1.2em;
+}
+
+.next-page{
+	float: right;
+}
