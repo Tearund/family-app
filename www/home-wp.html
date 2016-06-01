@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
-
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
     distributed with this work for additional information
@@ -23,29 +21,11 @@
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <link rel="stylesheet" type="text/css" href="js/jquery.mobile.structure-1.4.0.min.css" />
-        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mobile-1.4.0.min.js"></script>
-       <script type="text/javascript" charset="utf-8">
+       <!-- <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>-->
 
-            // Wait for device API libraries to load
-            //
-            document.addEventListener("deviceready", onDeviceReady, false);
-
-            // device APIs are available
-            //
-            function onDeviceReady() {
-                //directToHome()
-                //var db = window.openDatabase("test", "1.0", "Test DB", 1000000);
-                //var db = window.openDatabase("User", "1.0", "User DB", 1000000);
-            }
-
-            
-        </script>
         <title>Hello World</title>
     </head>
     <body>
@@ -64,17 +44,49 @@
             <!--     <a href="#"class="showMenu"></a>
          -->    <a href="#menu" class="showMenu"></a>
                 <h1>Carbon Cutter</h1>
-                <a href="#" onclick="goToStory(1)">Go to story</a>
-               
+                <div class="stories">
+
+                </div>
+                <script type="text/javascript">
+                $.getJSON("http://localhost:8888/tf-stories-wp/wp-json/wp/v2/posts", function(result){
+                $.each(result, function(i, field){
+                    console.log(field['title']['rendered']);
+                    $('.stories').append("<div class=''><a href='#' onclick='goToStory(" + field['id'] +")'>" + field['title']['rendered'] + "</div>")
+                    //$("div").append(field + " ");
+                });
+            });
+            </script>
             </div>
             <div data-role="content">
 
         </div>
     </div>
 <!-- End of Home page -->
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>
+ <div data-role="page" class="page" id="test">
+            <div data-role="panel" id="menu">
+               <!--  <ul id="menu-list">
+                    <li id="menu-home" class="active"><a href="#" class="contentLink"><h1>Home</h1> </a></li>
+                    <li id="menu-actions"><a onclick="goToCurrent();" href="#" class="contentLink"><h1>Actions</h1> </a></li>
+                    <li id="menu-friends"><a onclick="goToFriends();" href="#" class="contentLink"><h1>Friends</h1> </a></li>
+                    <li id="menu-badges"><a onclick="goToBadges();" href="#" class="contentLink"><h1>Badges</h1> </a></li>
+                    <li id="menu-settings"><a onclick="goToSettings();" href="#" class="contentLink"><h1>Settings</h1> </a></li>
+                    <li id="menu-signout"><a href="#" onclick="logout()" class="contentLink"><h1>Sign Out</h1> </a></li>
+                </ul> -->
+                </div><!-- /panel -->
+            <div class="header" data-role="header">
+            <!--     <a href="#"class="showMenu"></a>
+         -->    <a href="#menu" class="showMenu"></a>
+                <h1>Test</h1>
+                <div class="stories">
+
+                </div>
+               
+            </div>
+            <div data-role="content">
+
+        </div>
+    </div>
+    
         <script type="text/javascript">
             app.initialize();
         </script>
