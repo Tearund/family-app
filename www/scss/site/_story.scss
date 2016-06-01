@@ -22,5 +22,12 @@
 }
 
 .next-page{
-	float: right;
+	position: absolute;
+    right: 3em;
+    bottom: 6em;
+    background-image: url('../img/next.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 30px;
 }

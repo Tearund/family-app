@@ -1,5 +1,29 @@
-.story1-page1{
-	background: url('../img/story1/page1.jpg');
-	background-size: 100%;
-    background-repeat: no-repeat;
+.story-1{
+	&.page-1{
+		background: url('../img/story1/page1.jpg');
+		background-size: 100%;
+	    background-repeat: no-repeat;
+	}
+	.page-1--content{
+		text-align: center;
+		margin-top: 500px;
+	}
+	.selectables__round{
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 200px;
+		height: 200px;
+	}
+}
+.reveal--spider{
+	background-image: url('../img/reveal/spider.png');
+}
+.reveal--lizard{
+	background-image: url('../img/reveal/lizard.png');
+}
+.reveal--caterpillar{
+	background-image: url('../img/reveal/caterpillar.png');
+}
+.reveal--snail{
+	background-image: url('../img/reveal/snail.png');
 }

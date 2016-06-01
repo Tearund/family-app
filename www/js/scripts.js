@@ -9,7 +9,13 @@ function goToStory(id){
         changeHash: true,
         reverse: false,
         showLoadMsg: true,
-        reload: true
+        reload: true,
+        show: function( event, ui ) {
+          alert('show');
+          $('.reveal').bind('touchstart click', function(){
+            alert('clicked');
+          });
+        }
     });
 }
 
@@ -63,9 +69,16 @@ function directToHome(){
 //     });
 // }
 
-function nextPage(page){
+$(document).on("pageshow",function(event,data){
+  $('.next-page').bind('tap', function(){
+      //alert($(this));
+      nextPage($(this).data('story'), $(this).data('page'));
+  });
+});
+
+function nextPage(story, page){
 	page++;
-	$(':mobile-pagecontainer').pagecontainer('change', '#page-'+page, {
+	$(':mobile-pagecontainer').pagecontainer('change', 'page'+page+'.html', {
        //  beforeshow: function( event, ui ) {alert('test')}
        transition: 'flip',
        changeHash: true,
