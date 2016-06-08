@@ -9,19 +9,17 @@
 		background-size: 100%;
 	    background-repeat: no-repeat;
 	}
+	&.page-3{
+		background: url('../img/story1/page3.jpg');
+		background-size: 100%;
+	    background-repeat: no-repeat;
+	}
 	.page-1--content{
 		text-align: center;
 		position: absolute;
 	    bottom: 3em;
 	    width: 100%;
 
-	}
-	.page-2--content{
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		padding: 4em;
-		background: #fff;
 	}
 	.selectables__round{
 		background-repeat: no-repeat;
@@ -41,4 +39,74 @@
 }
 .reveal--snail{
 	background-image: url('../img/reveal/snail.png');
+}
+.story-1-family-image{
+	width: 100%;
+	height: auto;
+}
+.tooltip--kawena{
+	background-image: url('../img/story1/kawena-tooltip.png');
+	width: 207px;
+    height: 152px;
+    position: absolute;
+    top: 21%;
+    left: 3%;
+}
+.tooltip--daddy{
+	background-image: url('../img/story1/daddy-tooltip.png');
+	position: absolute;
+	width: 190px;
+    top: 4%;
+    height: 160px;
+    left: 29%;
+}
+.tooltip--kaipo{
+	background-image: url('../img/story1/kaipo-tooltip.png');
+	position: absolute;
+	top: 16%;
+    left: 43%;
+    height: 180px;
+    width: 180px;
+}
+.tooltip--aulii{
+	background-image: url('../img/story1/aulii-tooltip.png');
+	position: absolute;
+    height: 180px;
+    width: 180px;
+    top: 13%;
+    left: 63%;
+}
+.bird{
+	background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+.bird--blue{
+	background-image: url('../img/story1/blue-bird.png');
+	width: 160px;
+    height: 152px;
+    top: 12%;
+    right: 25%;
+}
+.bird--orange{
+	background-image: url('../img/story1/orange-bird.png');
+	width: 137px;
+    height: 152px;
+    top: 4%;
+    right: 14%;;
+}
+.reveal--wooden-handle{
+	background-image: url('../img/reveal/wooden-handle.png');
+}
+.reveal--string{
+	background-image: url('../img/reveal/string.png');
+}
+.reveal--grass{
+	background-image: url('../img/reveal/grass.png');
+}
+.reveal--bowl{
+	background-image: url('../img/reveal/bowl.png');
+}
+.reveal--flip-flop{
+	background-image: url('../img/reveal/flip-flop.png');
 }

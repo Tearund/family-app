@@ -11,14 +11,30 @@
 	// 	display: block;
 	// }
 }
-.page-content{
-	color: #fff;
-    position: absolute;
-    bottom: 0;
-    width: 95%;
-    background: rgba(0,0,0,0.6);
-    padding: 2em;
-    font-size: 1.2em;
+// .page-content{
+// 	color: #fff;
+//     position: absolute;
+//     bottom: 0;
+//     width: 95%;
+//     background: rgba(0,0,0,0.6);
+//     padding: 2em;
+//     font-size: 1.2em;
+// }
+
+.page-content--top{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding: 4em;
+	background: #fff;
+}
+
+.page-content--bottom{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 4em;
+	background: #fff;
 }
 
 .next-page{
