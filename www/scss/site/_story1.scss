@@ -4,9 +4,24 @@
 		background-size: 100%;
 	    background-repeat: no-repeat;
 	}
+	&.page-2{
+		background: url('../img/story1/family.jpg');
+		background-size: 100%;
+	    background-repeat: no-repeat;
+	}
 	.page-1--content{
 		text-align: center;
-		margin-top: 500px;
+		position: absolute;
+	    bottom: 3em;
+	    width: 100%;
+
+	}
+	.page-2--content{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		padding: 4em;
+		background: #fff;
 	}
 	.selectables__round{
 		background-repeat: no-repeat;
