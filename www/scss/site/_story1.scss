@@ -110,3 +110,34 @@
 .reveal--flip-flop{
 	background-image: url('../img/reveal/flip-flop.png');
 }
+.page-6-selectables{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    .selectables{
+    	width: 80%;
+	    float: right;
+	    text-align: right;
+	    padding: 2em;
+	    border-top-right-radius: 20px;
+	    border-bottom-left-radius: 20px;
+    }
+    .selectables__round{
+    	width: 171px;
+    	margin: 0 1%;
+    	background-position: bottom;
+    	height: 110px;
+    }
+    .reveal--flip-flop{
+    	width: 111px;
+    }
+    .reveal--grass{
+    	width: 90px;
+    }
+    .reveal--string{
+    	width: 130px;
+    }
+    .reveal--bowl{
+    	width: 110px;
+    }
+}
