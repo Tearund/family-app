@@ -14,6 +14,16 @@
 		background-size: 100%;
 	    background-repeat: no-repeat;
 	}
+	&.page-6{
+		background: url('../img/story1/page6.jpg');
+		background-size: 100%;
+	    background-repeat: no-repeat;
+	}
+	&.page-7{
+		background: url('../img/story1/page7.jpg');
+		background-size: 100%;
+	    background-repeat: no-repeat;
+	}
 	.page-1--content{
 		text-align: center;
 		position: absolute;
@@ -141,4 +151,3 @@
     	width: 110px;
     }
 }
-.test{}
